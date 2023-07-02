@@ -1,0 +1,38 @@
+#sort and flatten
+def sort_flat(array):
+  new_array=[]
+  for x in array:
+    for i in x:
+      new_array.append(i)
+  return sorted(new_array)
+
+
+#1 this doesnt change the array just sortes it
+#2 iit is a pure function as it changes nothing out side the function
+#3 it is not a high order function as it does not call a nother function
+#4 i have no idea why it would be easer to use thin and not oop
+
+class  Podracer:
+  def __init__(self,max_kph,condition,price):
+    self.max_kph= max_kph
+    self.condition = condition
+    self.price= price
+    def repair(self):
+      self.conditon= "repaired"
+
+class anakinsPod(Podracer):
+  def __init__(self,max_kph,condition,price):
+    super.init(max_kph,condition,price):
+
+  def boost(self):
+    self.max_kph *=2
+
+
+
+def sebulbaPod(Podracer):
+  def __init__(self,max_kph,condition,price):
+    super.init(max_kph,condition,price):
+
+  def flames(self,other):
+    other.condition = "trashed"
+
